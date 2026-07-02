@@ -1,0 +1,38 @@
+package_name: credit_model
+pipeline_name: credit_pipeline
+pipeline_save_file: credit_pipeline.pkl
+
+data_folder: data/
+train_data_file: application_record.csv
+credit_record_file: credit_record.csv
+
+test_size: 0.2
+random_state: 42
+
+target: target
+
+features_to_drop:
+  - ID
+  - FLAG_MOBIL
+  - CNT_FAM_MEMBERS
+  - DAYS_BIRTH
+  - DAYS_EMPLOYED
+
+numerical_features:
+  - CNT_CHILDREN
+  - AMT_INCOME_TOTAL
+  - FLAG_WORK_PHONE
+  - FLAG_PHONE
+  - FLAG_EMAIL
+  - AGE_YEARS
+  - YEARS_EMPLOYED
+
+categorical_features:
+  - NAME_INCOME_TYPE
+  - NAME_EDUCATION_TYPE
+  - NAME_FAMILY_STATUS
+  - NAME_HOUSING_TYPE
+  - OCCUPATION_TYPE
+  - CODE_GENDER
+  - FLAG_OWN_CAR
+  - FLAG_OWN_REALTY
