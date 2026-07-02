@@ -36,3 +36,8 @@ categorical_features:
   - CODE_GENDER
   - FLAG_OWN_CAR
   - FLAG_OWN_REALTY
+
+features_to_drop:
+  - ID
+  - FLAG_MOBIL
+  - CNT_FAM_MEMBERS
